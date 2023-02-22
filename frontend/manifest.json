@@ -1,0 +1,7 @@
+{
+    "name": "Online Reservation System",
+    "short_name": "Reservation System",
+    "description": "A simple online reservation system for a hotel",
+    "start_url": "/",
+    "orientation": "portrait"
+}

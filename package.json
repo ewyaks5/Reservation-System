@@ -7,15 +7,27 @@
   "author": "Rens Saladaga <ewyaks.5@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "backend:build": "tsc -p ."
+    "backend:build": "tsc -p .",
+    "backend:watch": "concurrently \"tsc -p . --watch\" \"nodemon .\"",
+
+    "frontend:watch": "snowpack build --watch",
+
+    "dev": "concurrently \"yarn run backend:watch\" \"yarn run frontend:watch\"",
+    "build": "concurrently \"yarn run backend:build\" \"yarn run snowpack build\"",
+
+    "test": "mocha dist/**/*.spec.js"
   },
   "private": true,
   "devDependencies": {
     "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-typescript": "^1.2.1",
     "@types/express": "^4.17.17",
+    "@types/mocha": "^10.0.1",
     "@types/mysql": "^2.15.21",
     "@types/node": "^18.14.0",
+    "concurrently": "^7.6.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
     "snowpack": "^3.8.8",
     "typescript": "^4.9.5"
   },
