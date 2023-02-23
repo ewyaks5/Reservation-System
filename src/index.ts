@@ -20,6 +20,7 @@ function buildApp(): express.Application {
     app.set("views", "./views");
 
     app.use(express.static("static"));
+    app.use("/img", express.static("img"));
 
     initRoutes(app);
 

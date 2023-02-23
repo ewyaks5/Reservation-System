@@ -1,16 +1,74 @@
-<div class="hero min-h-screen" >
+<div class="hero min-h-screen">
     {{!-- <div class="hero-overlay bg-opacity"></div> --}}
     <div class="hero-content text-center text-neutral-content">
         <div class="max-w-lg">
             <h1 class="text-5xl font-bold intro-animation-from-top">Discover your perfect stay with us</h1>
-            <p class="py-6 intro-animation-from-bottom">Book your dream hotel today and experience comfort, convenience, and luxury at affordable
-                prices.</p>
+            <form class="py-6">
+                <div class="form-control">
+                    <label for="" class="label">
+                        <span class="label-text">Check In</span>
+                    </label>
+                    <input type="date" class="input input-bordered">
+                </div>
+
+                <div class="form-control">
+                    <label for="" class="label">
+                        <span class="label-text">Check Out</span>
+                    </label>
+                    <input type="date" class="input input-bordered">
+                </div>
+
+                <div class="form-control">
+                    <label for="" class="label">
+                        <span class="label-text">How many guests?</span>
+                    </label>
+
+                    <select name="" id="" class="select select-bordered">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </form>
             <button class="btn btn-primary">Find Rooms</button>
         </div>
     </div>
 </div>
+<div class="min-h-screen mx-auto px-[1.5rem]">
+    <h3 class="text-2xl">Featured Rooms</h3>
+    <br>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full place-content-center">
+        <div class="card w-full bg-base-200 shadow-xl">
+            <figure><img src="/img/deluxe-king.jpg"/></figure>
+            <div class="card-body">
+                <h2 class="card-title">Deluxe King Room</h2>
+                <div class="card-actions">
+                    <button class="btn btn-primary btn-outline">Php 10,996.28/Night</button>
+                </div>
+            </div>
+        </div>
 
-<div class="min-h-screen">
+        <div class="card w-full bg-base-200 shadow-xl place-content-center">
+            <figure><img src="/img/executive-suite2.jpg"/></figure>
+            <div class="card-body">
+                <h2 class="card-title">Executive Suite</h2>
+                <div class="card-actions">
+                    <button class="btn btn-primary btn-outline">Php 19,243.49/Night</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-full bg-base-200 shadow-xl place-content-center">
+            <figure><img src="/img/deluxe-king.jpg"/></figure>
+            <div class="card-body">
+                <h2 class="card-title">Penthouse Suite</h2>
+                <div class="card-actions">
+                    <button class="btn btn-primary btn-outline">Php 27,490.70/Night</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {{!-- style="background-image: url(/img/highway.jpg);" --}}

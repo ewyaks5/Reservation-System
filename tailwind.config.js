@@ -9,6 +9,6 @@ module.exports = {
   ],
 
   daisyui: {
-    themes: ["night", "cupcake"]
+    themes: ["luxury"]
   }
 }
