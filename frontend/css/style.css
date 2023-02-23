@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .intro-animation-from-top {
+        animation: from-top .75s ease;
+    }
+
+    .intro-animation-from-bottom {
+        animation: from-bottom .75s ease;
+    }
+
+
+    .intro-animation-from-left {
+        animation: from-left .75s ease;
+    }
+
+    .intro-animation-from-right {
+        animation: from-right .75s ease;
+    }
+
+    .delay {
+        animation-delay: 1s;
+    }
+
+    @keyframes from-top {
+        from {
+            opacity: 0;
+            transform: translateY(-30%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes from-bottom {
+        from {
+            opacity: 0;
+            transform: translateY(30%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes from-left {
+        from {
+            opacity: 0;
+            transform: translateX(-30%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes from-right {
+        from {
+            opacity: 0;
+            transform: translateX(30%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

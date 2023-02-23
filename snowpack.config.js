@@ -5,14 +5,14 @@
 module.exports = {
   mount: {
     "frontend/ts": "/js",
-    "frontend/scss": "/css",
     "frontend": "/"
   },
   plugins: [
     ["@snowpack/plugin-typescript", {
       args: ["--project ./tsconfig.frontend.json"]
     }],
-    "@snowpack/plugin-sass"
+    "@snowpack/plugin-sass",
+    "@snowpack/plugin-postcss"
   ],
   packageOptions: {
     /* ... */

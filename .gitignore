@@ -5,3 +5,5 @@ logs
 
 static/css
 static/js
+
+yarn-error.log

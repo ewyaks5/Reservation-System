@@ -15,6 +15,4 @@ describe("Database Operations", () => {
             assert.equal(status, "fail");
         })
     });
-
-
 })
